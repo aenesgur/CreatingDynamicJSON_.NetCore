@@ -1,0 +1,12 @@
+﻿@model CreatingDynamicJson.UI.Models.Author
+@using CreatingDynamicJson.UI.Helper
+@{
+    var jsonData = Model.CreateDynamicJson();
+}
+@if (jsonData != null)
+{
+        @Html.Raw(jsonData);
+
+}
+
+
